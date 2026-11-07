@@ -1,0 +1,194 @@
+class ProfessionalModel {
+  final String id;
+  final String name;
+  final String phone;
+  final String email;
+  final String photoUrl;
+  final double rating;
+  final int experience;
+  final int jobsCompleted;
+  final String responseTime;
+  final List<String> skills;
+  final List<String> languages;
+  final List<String> serviceAreas;
+  final bool isVerified;
+  final bool isEmergencyAvailable;
+  final double basePrice;
+  final String about;
+
+  const ProfessionalModel({
+    required this.id,
+    required this.name,
+    required this.phone,
+    required this.email,
+    required this.photoUrl,
+    required this.rating,
+    required this.experience,
+    required this.jobsCompleted,
+    required this.responseTime,
+    this.skills = const [],
+    this.languages = const [],
+    this.serviceAreas = const [],
+    required this.isVerified,
+    required this.isEmergencyAvailable,
+    required this.basePrice,
+    required this.about,
+  });
+
+  factory ProfessionalModel.amitSharma() => const ProfessionalModel(
+        id: 'PRF001',
+        name: 'Amit Sharma',
+        phone: '+91-9876543201',
+        email: 'amit.sharma@email.com',
+        photoUrl: 'assets/images/professionals/amit_sharma.jpg',
+        rating: 4.8,
+        experience: 8,
+        jobsCompleted: 1250,
+        responseTime: '30 mins',
+        skills: ['Wiring', 'Switchboard Repair', 'Circuit Troubleshooting', 'Fan Installation', 'Inverter Repair'],
+        languages: ['Hindi', 'English'],
+        serviceAreas: ['Delhi', 'Noida', 'Ghaziabad'],
+        isVerified: true,
+        isEmergencyAvailable: true,
+        basePrice: 199.0,
+        about:
+            'Certified electrician with 8+ years of experience. Specializes in residential and commercial electrical work. 24/7 emergency service available.',
+      );
+
+  factory ProfessionalModel.vikramSingh() => const ProfessionalModel(
+        id: 'PRF002',
+        name: 'Vikram Singh',
+        phone: '+91-9876543202',
+        email: 'vikram.singh@email.com',
+        photoUrl: 'assets/images/professionals/vikram_singh.jpg',
+        rating: 4.7,
+        experience: 6,
+        jobsCompleted: 980,
+        responseTime: '25 mins',
+        skills: ['Pipe Repair', 'Tap Installation', 'Drainage Cleaning', 'Water Heater Setup', 'Bathroom Fitting'],
+        languages: ['Hindi', 'English', 'Punjabi'],
+        serviceAreas: ['Delhi', 'Gurugram', 'Faridabad'],
+        isVerified: true,
+        isEmergencyAvailable: true,
+        basePrice: 179.0,
+        about:
+            'Skilled plumber with 6 years of hands-on experience. Expert in all types of plumbing repairs and installations.',
+      );
+
+  factory ProfessionalModel.priyaVerma() => const ProfessionalModel(
+        id: 'PRF003',
+        name: 'Priya Verma',
+        phone: '+91-9876543203',
+        email: 'priya.verma@email.com',
+        photoUrl: 'assets/images/professionals/priya_verma.jpg',
+        rating: 4.9,
+        experience: 10,
+        jobsCompleted: 2100,
+        responseTime: '20 mins',
+        skills: ['AC Installation', 'Gas Refilling', 'Compressor Repair', 'Split AC Service', 'Inverter AC Repair'],
+        languages: ['Hindi', 'English'],
+        serviceAreas: ['Delhi', 'Noida', 'Gurugram'],
+        isVerified: true,
+        isEmergencyAvailable: true,
+        basePrice: 349.0,
+        about:
+            'Top-rated AC technician with a decade of experience. Certified in advanced AC repair and maintenance.',
+      );
+
+  factory ProfessionalModel.snehaPatel() => const ProfessionalModel(
+        id: 'PRF004',
+        name: 'Sneha Patel',
+        phone: '+91-9876543204',
+        email: 'sneha.patel@email.com',
+        photoUrl: 'assets/images/professionals/sneha_patel.jpg',
+        rating: 4.6,
+        experience: 4,
+        jobsCompleted: 750,
+        responseTime: '40 mins',
+        skills: ['Deep Cleaning', 'Sofa Cleaning', 'Carpet Cleaning', 'Kitchen Cleaning', 'Bathroom Cleaning'],
+        languages: ['Hindi', 'English', 'Gujarati'],
+        serviceAreas: ['Delhi', 'Gurugram'],
+        isVerified: true,
+        isEmergencyAvailable: false,
+        basePrice: 249.0,
+        about:
+            'Dedicated cleaning professional offering thorough home and office cleaning services. Eco-friendly products used.',
+      );
+
+  factory ProfessionalModel.rajanGupta() => const ProfessionalModel(
+        id: 'PRF005',
+        name: 'Rajan Gupta',
+        phone: '+91-9876543205',
+        email: 'rajan.gupta@email.com',
+        photoUrl: 'assets/images/professionals/rajan_gupta.jpg',
+        rating: 4.7,
+        experience: 12,
+        jobsCompleted: 620,
+        responseTime: '45 mins',
+        skills: ['Interior Painting', 'Exterior Painting', 'Wall Texture', 'Waterproofing', 'Wood Polishing'],
+        languages: ['Hindi', 'English'],
+        serviceAreas: ['Delhi', 'Noida', 'Ghaziabad', 'Faridabad'],
+        isVerified: true,
+        isEmergencyAvailable: false,
+        basePrice: 499.0,
+        about:
+            'Master painter with 12+ years of experience. Specializes in premium interior and exterior painting solutions.',
+      );
+
+  factory ProfessionalModel.mohammadIdris() => const ProfessionalModel(
+        id: 'PRF006',
+        name: 'Mohammad Idris',
+        phone: '+91-9876543206',
+        email: 'idris.khan@email.com',
+        photoUrl: 'assets/images/professionals/mohammad_idris.jpg',
+        rating: 4.8,
+        experience: 9,
+        jobsCompleted: 490,
+        responseTime: '35 mins',
+        skills: ['Furniture Assembly', 'Door Fitting', 'Window Repair', 'Modular Kitchen', 'Custom Woodwork'],
+        languages: ['Hindi', 'Urdu', 'English'],
+        serviceAreas: ['Delhi', 'Noida', 'Gurugram'],
+        isVerified: true,
+        isEmergencyAvailable: true,
+        basePrice: 299.0,
+        about:
+            'Experienced carpenter skilled in both traditional and modern woodworking. Quality craftsmanship guaranteed.',
+      );
+
+  ProfessionalModel copyWith({
+    String? id,
+    String? name,
+    String? phone,
+    String? email,
+    String? photoUrl,
+    double? rating,
+    int? experience,
+    int? jobsCompleted,
+    String? responseTime,
+    List<String>? skills,
+    List<String>? languages,
+    List<String>? serviceAreas,
+    bool? isVerified,
+    bool? isEmergencyAvailable,
+    double? basePrice,
+    String? about,
+  }) =>
+      ProfessionalModel(
+        id: id ?? this.id,
+        name: name ?? this.name,
+        phone: phone ?? this.phone,
+        email: email ?? this.email,
+        photoUrl: photoUrl ?? this.photoUrl,
+        rating: rating ?? this.rating,
+        experience: experience ?? this.experience,
+        jobsCompleted: jobsCompleted ?? this.jobsCompleted,
+        responseTime: responseTime ?? this.responseTime,
+        skills: skills ?? this.skills,
+        languages: languages ?? this.languages,
+        serviceAreas: serviceAreas ?? this.serviceAreas,
+        isVerified: isVerified ?? this.isVerified,
+        isEmergencyAvailable: isEmergencyAvailable ?? this.isEmergencyAvailable,
+        basePrice: basePrice ?? this.basePrice,
+        about: about ?? this.about,
+      );
+}
